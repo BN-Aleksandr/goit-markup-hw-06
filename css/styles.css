@@ -549,6 +549,7 @@ p {
 
 .footer>.container {
     display: flex;
+    align-items: baseline;
 }
 
 .address-wrapper {
@@ -610,7 +611,6 @@ p {
 
 .footer-socials {
     width: 206px;
-    margin-top: 12px;
 
     color: var(--text-color-white);
 }
@@ -637,11 +637,10 @@ p {
 
 
 .footer-form {
-    margin-top: 12px;
     margin-left: auto;
 }
 
-.footer-form-label {
+.footer-form-text {
     display: block;
     margin-bottom: 20px;
     font-weight: 700;
@@ -873,7 +872,8 @@ p {
     color: var(--text-placeholder-cl);
 }
 
-.modal-input:focus {
+.modal-input:focus,
+.modal-input:hover {
     outline: transparent;
     border: 1px solid var(--accent-color);
 
@@ -895,7 +895,8 @@ p {
     transition: color var(--transition-parameters);
 }
 
-.modal-input:focus+.input-icon {
+.modal-input:focus+.input-icon,
+.modal-input:hover+.input-icon {
     color: var(--accent-color);
 }
 
